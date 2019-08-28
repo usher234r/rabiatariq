@@ -1,0 +1,45 @@
+.home-page-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  @include breakpoint(md) {
+    position: static;
+    padding: 30px 0 15px; }
+  .copy-text {
+    color: #bbbabf;
+    p {
+      margin: 0 0 6px; }
+    span {
+      color: $primary-color; } } }
+.main-footer {
+  background: #36353b;
+  margin-top: 70px;
+  @include breakpoint(xs) {
+    margin-top: 20px; }
+  padding: 18px 0;
+  color: #999;
+  span {
+    color: $primary-color; }
+  a {
+    color: #999;
+    transition: all 0.24s ease-in-out;
+    &:hover {
+      color: $primary-color; } } }
+.get-intouch {
+  @include breakpoint(xs) {
+    margin-top: 50px; } }
+.footer-logo {
+  @include breakpoint(md) {
+    display: inline-block;
+    margin-bottom: 10px; } }
+
+.footer_social_media {
+  @extend .widget.widget_social_media;
+  ul {
+    text-align: right;
+    @include breakpoint(md) {
+      text-align: center; }
+    li a {
+      text-align: center; } } }

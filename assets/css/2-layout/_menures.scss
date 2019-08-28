@@ -1,0 +1,123 @@
+
+
+
+
+
+
+@media   (max-width: 991.98px)  {
+  .main-menu>ul>li:hover:before,
+  .main-menu>ul>li:hover:after,
+  .main-menu>ul>li.current-menu-item:before,
+  .main-menu>ul>li.current-menu-item:after
+  {
+    @include hidden()
+  }
+  .main-menu ul {
+    text-align: left;
+  }
+  .main-menu ul li {
+    display: block;
+  }
+  .main-menu ul li a {
+    padding: 8px 20px !important;
+  }
+  .main-menu ul > li:hover > a{
+    background: #fff;
+    color: $primary-color !important;
+  }
+  .main-menu>ul>li.menu-item-has-children>ul.sub-menu {
+
+    display: none;
+    transition: none;
+    position: static;
+    background: $body_ThemeDark;
+    box-shadow: none;
+    @include vis();
+    padding-left: 15px;
+    border-top: 3px solid transparent;
+
+
+  }
+
+  .main-menu > ul > li.menu-item-has-children > ul.sub-menu > li:hover > a, .main-menu ul ul > li:hover > a{
+    color: #fff !important;
+    padding-left: 30px !important;
+  }
+
+  .main-menu ul ul {
+    display: none;
+    transition: none;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    @include vis();
+    padding-left: 15px;
+    margin: 0px;
+    background: $body_ThemeDark;
+    border-top: 3px solid transparent;
+  }
+
+
+  .main-menu > ul > li.menu-item-has-children > ul.sub-menu > li > a,
+  .main-menu ul ul li a{
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 7px 15px;
+  }
+
+  .main-menu > ul > li.menu-item-has-children > ul.sub-menu > li:hover > a,
+  .main-menu ul ul > li:hover > a{
+    padding-left: 10px;
+    background: $primary-color;
+  }
+
+  .main-menu>ul>li.menu-item-has-children>ul.sub-menu>li>a,
+  .main-menu ul ul li a {
+    padding: 10px 0px;
+  }
+
+  .main-menu {
+    overflow-x: hidden;
+  }
+  .main-menu ul ul li.menu-item-has-children>a:after {
+    right: 70px;
+  }
+  .main-menu ul {
+    @include hidden();
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: #36353b;
+    transition: all 0.34s ease-in-out;
+    z-index: 999;
+
+
+  }
+  .main-menu ul.show{
+    @include vis();
+    top: 100%;
+  }
+  .mobile-menu{
+    display: block;
+    text-align: center;
+  }
+  .main-menu ul.show > li > a{
+    color: #fff;
+
+  }
+
+
+
+
+
+    
+    
+}
+
+
+
+
