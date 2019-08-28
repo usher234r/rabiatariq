@@ -3887,7 +3887,7 @@ ul.hikma-social li a:hover
 {
     display: block;
 
-    color:  #f7a708;
+    color:  #f7a708!important;
 }
 
 @media (max-width: 767.98px)
