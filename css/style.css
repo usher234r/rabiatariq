@@ -1449,6 +1449,13 @@ px      68    160    252    */
     text-align: center;
     margin-top: 30px;
 }
+@media (min-width: 1280px) {
+  
+ .col-md-4.col-lg-4.col-xs-12.product {
+    top: 12.25em;
+}
+  
+}
 /*		Wide Mobile Layout: 480px.
 		Gutters: 24px.
 		Outer margins: 22px.
